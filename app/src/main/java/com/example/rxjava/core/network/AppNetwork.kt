@@ -7,7 +7,7 @@ import com.chuckerteam.chucker.api.RetentionManager
 import com.example.rxjava.core.App.App
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 object AppNetwork {
@@ -18,8 +18,8 @@ object AppNetwork {
         return Retrofit
             .Builder()
             .baseUrl("https://api.weatherapi.com/")
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .client(client())
             .build()
     }

@@ -2,6 +2,7 @@ package com.example.rxjava.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import coil.load
 import com.example.rxjava.core.model.WeatherResponse
 import com.example.rxjava.databinding.ActivityMainBinding
@@ -20,7 +21,9 @@ class MainActivity : AppCompatActivity(), MainMVP.View {
     }
 
     override fun setData(data: WeatherResponse) {
-//        binding.imageWeather.load(data.current.condition.icon)
+        binding.imageWeather.load("https:${data.current.condition.icon}")
+        binding.gradusLocation.setText("C= "+data.current.temp_c.toString())
+        binding.locationName.setText(data.location.name)
     }
 
     override fun onProgress(data: Boolean) {
