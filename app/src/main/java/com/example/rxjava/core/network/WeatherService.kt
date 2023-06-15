@@ -1,6 +1,6 @@
 package com.example.rxjava.core.network
 
-import com.example.rxjava.core.model.WeatherResponse
+import com.example.rxjava.core.model.home.WeatherResponse
 import io.reactivex.rxjava3.core.Single
 import retrofit2.Response
 import retrofit2.http.GET

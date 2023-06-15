@@ -1,7 +1,7 @@
 package com.example.rxjava.ui
 
 
-import com.example.rxjava.core.model.WeatherResponse
+import com.example.rxjava.core.model.home.WeatherResponse
 import com.example.rxjava.core.network.AppNetwork
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.observers.DisposableSingleObserver

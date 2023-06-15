@@ -1,4 +1,4 @@
-package com.example.rxjava.core.model
+package com.example.rxjava.core.model.home
 
 data class WeatherResponse(
     val current: Current,

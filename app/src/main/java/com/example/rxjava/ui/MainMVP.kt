@@ -1,11 +1,11 @@
 package com.example.rxjava.ui
 
-import com.example.rxjava.core.model.WeatherResponse
+import com.example.rxjava.core.model.home.WeatherResponse
 
 interface MainMVP {
 
 interface View{
-        fun setData(data:WeatherResponse)
+        fun setData(data: WeatherResponse)
         fun onProgress(data:Boolean)
         fun setError(str:String)
 }

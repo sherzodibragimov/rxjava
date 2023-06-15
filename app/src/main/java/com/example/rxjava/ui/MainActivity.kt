@@ -2,9 +2,8 @@ package com.example.rxjava.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import coil.load
-import com.example.rxjava.core.model.WeatherResponse
+import com.example.rxjava.core.model.home.WeatherResponse
 import com.example.rxjava.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), MainMVP.View {

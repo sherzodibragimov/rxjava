@@ -1,4 +1,4 @@
-package com.example.rxjava.core.model
+package com.example.rxjava.core.model.forecast
 
 data class Location(
     val country: String,
